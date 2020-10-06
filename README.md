@@ -20,6 +20,6 @@ pdf_paths = [BASE_PATH / "TestDoc01.pdf",
 Who knows, maybe I'll read the rest of the article and come up with some other features.
 
 ## Credits
-Pretty much all credit goes to [Create and Modify PDF Files in Python](https://realpython.com/creating-modifying-pdf/#concatenating-and-merging-pdfs)
+Pretty much all credit goes to [David Amos](https://realpython.com/team/damos/)'s article on RealPython, titled [Create and Modify PDF Files in Python](https://realpython.com/creating-modifying-pdf/#concatenating-and-merging-pdfs)
 
 All I did was set up the folder structure, change the BASE_PATH to start from the project's root folder, and create a pipenv environment.
