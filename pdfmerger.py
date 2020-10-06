@@ -14,6 +14,10 @@ pdf_paths = [BASE_PATH / "TestDoc01.pdf",
              BASE_PATH / "TestDoc02.pdf",
              BASE_PATH / "TestDoc03.pdf"]
 
+# If you want a different name for your final PDF
+# file, be sure to change it below 
+output_filename = "YourMergedDocument.pdf"
+
 if __name__ == "__main__":
     # create a merger object
     pdf_merger = PdfFileMerger()
@@ -23,6 +27,6 @@ if __name__ == "__main__":
         pdf_merger.append(str(path))
 
     # write merged contents to file
-    output_path = Path.cwd() / "output" / "YourMergedDocument.pdf"
+    output_path = Path.cwd() / "output" / output_filename
     with output_path.open(mode="wb") as output_file:
         pdf_merger.write(output_file)
